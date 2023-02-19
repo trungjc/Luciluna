@@ -1,0 +1,9 @@
+### Wordpress ###
+wp-content/uploads
+### PhpStorm ###
+.idea
+.DS_Store
+node_modules
+bower_components
+
+.tmp

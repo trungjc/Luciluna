@@ -1,0 +1,36 @@
+.contact {
+  
+    .address {
+        h5 {
+            text-transform: uppercase;
+        }
+        div {
+            color:#A0A09F;
+        }
+        font-size: 1.4rem;
+        max-width: 400px;
+    }
+    .btn {
+        min-width: 114px;
+        text-transform: uppercase;
+    }
+}
+.form-control {
+    border: none;
+    border-bottom: 1px solid $primary;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    min-height: 44px;
+    box-shadow: none!important;
+}
+
+textarea.form-control {
+    resize: none;
+    min-height: 129px;
+}
+.social {
+    a {
+        color: $body-color;
+        font-size: 3rem;
+    }
+}

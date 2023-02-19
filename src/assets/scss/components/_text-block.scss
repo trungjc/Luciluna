@@ -1,0 +1,11 @@
+.text-block {
+    padding: 9rem 0;
+    font-size: 1.4rem;
+    .text {
+        max-width: 350px;
+        margin: auto;
+    }
+    h3 {
+        color: $primary
+    }
+}

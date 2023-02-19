@@ -1,0 +1,93 @@
+// @font-face {
+//   font-family: 'URW DIN';
+//   src: url('../fonts/URWDIN-Medium.eot');
+//   src: url('../fonts/URWDIN-Medium.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/URWDIN-Medium.woff2') format('woff2'),
+//   url('../fonts/URWDIN-Medium.woff') format('woff'),
+//   url('../fonts/URWDIN-Medium.ttf') format('truetype'),
+//   url('../fonts/URWDIN-Medium.svg#URWDIN-Medium') format('svg');
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'URW DIN';
+//   src: url('../fonts/URWDIN-Bold.eot');
+//   src: url('../fonts/URWDIN-Bold.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/URWDIN-Bold.woff2') format('woff2'),
+//   url('../fonts/URWDIN-Bold.woff') format('woff'),
+//   url('../fonts/URWDIN-Bold.ttf') format('truetype'),
+//   url('../fonts/URWDIN-Bold.svg#URWDIN-Bold') format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'URW DIN';
+//   src: url('../fonts/URWDIN-Regular.eot');
+//   src: url('../fonts/URWDIN-Regular.eot');
+//   src: url('../fonts/URWDIN-Regular.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/URWDIN-Regular.woff2') format('woff2'),
+//   url('../fonts/URWDIN-Regular.woff') format('woff'),
+//   url('../fonts/URWDIN-Regular.ttf') format('truetype'),
+//   url('../fonts/URWDIN-Regular.svg#URWDIN-Regular') format('svg');
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@font-face {
+    font-family: 'AvenirLTW01-35Light';
+    src: url('../fonts/AvenirLTW01-35Light.woff2') format('woff2'),
+        url('../fonts/AvenirLTW01-35Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaW01-Bold';
+    src: url('../fonts/HelveticaW01-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaW01-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Sharp Grotesk Medium 25';
+    src: url('../fonts/SharpGroteskMedium25-Regular.woff2') format('woff2'),
+        url('../fonts/SharpGroteskMedium25-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../fonts/ApercuPro-Bold.woff2') format('woff2'),
+        url('../fonts/ApercuPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../fonts/ApercuPro-Bold.woff2') format('woff2'),
+        url('../fonts/ApercuPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

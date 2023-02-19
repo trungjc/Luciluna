@@ -1,0 +1,7 @@
+.btn {
+    &:hover {
+        border-color: $primary;
+        color: $primary;
+        background-color: transparent;
+    }
+}

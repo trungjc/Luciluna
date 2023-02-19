@@ -1,0 +1,14 @@
+// AOS
+$aos-distance: 20px;
+@import '~aos/src/sass/aos.scss';
+
+
+// Swiper
+@import '~swiper/swiper-bundle.min.css';
+
+
+// Custom aos
+//$aos-distance: 200px !default;
+[data-aos='fade-right'] {
+  transform: translate3d(-300px, 0, 0) scale(1.4);
+}

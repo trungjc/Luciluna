@@ -1,0 +1,47 @@
+.card-in {
+    overflow: hidden;
+    background-color: #ededed;
+    text-align: center;
+    padding: 8rem 2rem 8rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.pink {
+        background-color: #E99F85;
+    }
+    &.green {
+        background-color: #4CD0A0;
+    }
+    &.light-pink {
+        background-color: #F5C0AF;
+    }
+    .title {
+        margin-bottom: 3rem;
+        font-weight: bold;
+        font-size: 2rem;
+        // min-height: 60px;
+    }
+    .arrow {
+       div {
+        transform: translateX(-50%) rotate(90deg);
+        position: absolute;
+        left: 50%;
+       }
+        svg {
+            
+            width: 8px;
+            height: 63px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .arrow {
+            svg {
+                width: 6px;
+                height: 40px;
+
+            }
+        }
+    }
+}

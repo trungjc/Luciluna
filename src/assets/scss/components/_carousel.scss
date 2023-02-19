@@ -1,0 +1,119 @@
+
+.swiper-pagination {
+    top: auto!important;
+    bottom: 3rem!important;
+    left: 50%!important;
+    transform: translateX(-50%)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .swiper-pagination-bullet {
+        background: white;
+        margin: 0 .4rem!important;
+        display: block;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+            opacity: 0.4
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .swiper-button-next {
+        right: 100px;
+    }
+    .swiper-button-prev {
+        left: 100px;
+    }
+}
+@include media-breakpoint-down(md) {
+    .swiper-pagination { 
+        bottom: 2rem!important;
+    }
+}
+.slider-content {
+    .swiper-button-prev {
+        transform: rotate(180deg);
+    }
+    .swiper-slide{
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12rem 0;
+        height: auto;
+        .img {
+            object-fit: cover;
+            height: 100%;
+            opacity: 0;
+            min-height: 600px;
+        }
+    }
+    .swiper-button-prev,.swiper-button-next {
+        width: auto;
+        height: auto;
+        &:after {
+            display: none;
+        }
+        svg {
+            width: 60px;
+            height: 16px;
+        }
+    }
+   
+    .card {
+        width: 600px;
+        margin: auto;
+    }
+    .card-body {
+        text-align: center;
+        
+        padding: 3.6rem;
+       
+        p {
+            font-size: 1.4rem;
+            font-family: $font-family-monospace;
+        }
+        .btn {
+            margin-bottom: 1rem;
+        }
+        > div {
+            max-width: 330px;
+            margin: auto;
+        }
+        img {
+            max-width: 87px;
+            margin: 0 auto 3rem;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .swiper-button-prev,.swiper-button-next {
+            svg {
+                width: 30px;
+                height: 8px;
+            }
+        }
+      
+        .card {
+            width: calc(100% - 2rem);
+        }
+    }
+}
+
+.persons {
+    text-align: center;
+    .name {
+        text-transform: uppercase;
+        font-weight: 700;
+       
+    }
+    
+    .ratio {
+        margin-bottom: 2rem;
+        img {
+            object-fit: cover;
+        }
+    }
+    font-size: 1.4rem;
+    font-family: 'Arial',$font-family-monospace;
+}

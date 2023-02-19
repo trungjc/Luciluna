@@ -1,0 +1,43 @@
+.app-footer {
+    padding: 5rem 0;
+    background-color: #2E2B2B;
+    color: rgb(96, 94, 94);
+    a {
+        color: inherit;
+        &:hover {
+            color: #57BBBF
+        }
+    }
+    li.nav-item {
+        text-align: center;
+        flex: 1;
+    }
+    .nav-link {
+        
+        padding: 1rem ;
+      
+    }
+    .navbar-brand  {
+        font-weight: 700;
+        font-size: 3rem;
+        margin: 0;
+    }
+    @include media-breakpoint-down(lg) {
+       
+        text-align: center;
+        .copy-right,.navbar-brand{
+            max-width: 100%;
+            width: 100%;
+            margin-top: 2rem;
+            display: block;
+        }
+        .navbar-brand {
+            margin: 0 0 2rem;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .navbar-nav {
+            flex-direction: column!important;
+        }
+    }
+}
