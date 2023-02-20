@@ -1,0 +1,17 @@
+.persons {
+    
+    text-align: center;
+    .name {
+        text-transform: uppercase;
+        // font-weight: 700;
+        font-size: 1.4rem;
+    }
+    
+    .ratio {
+        margin-bottom: 2rem;
+        img {
+            object-fit: cover;
+        }
+    }
+    // font-family: 'Arial',$font-family-monospace;
+}

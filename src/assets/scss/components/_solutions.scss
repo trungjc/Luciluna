@@ -1,5 +1,38 @@
 .solutions-block {
     .des {
-        padding: 8rem 0;   
+        padding: 2rem 0; 
+        overflow: hidden;  
+        .col {
+            margin-bottom: 2rem;
+        }
+    }
+    h5.text-primary {
+        margin-bottom: 3rem;
+        position: relative;
+        &:after {
+            content:"";
+            height: 1px;
+            background-color: white;
+            opacity: 0.6;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70%;
+        }
+        span {
+            background-color: inherit;
+            position: relative;
+            padding-right: 2rem;
+            display: inline-block;
+        }
+    }
+    .image img {
+        width: auto;
+        height: 50px;
+    }
+    .text {
+        font-size: 1.2rem;
+        
+      
     }
 }

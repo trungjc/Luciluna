@@ -45,3 +45,17 @@
         }
     }
 }
+
+.cards-block {
+    .swiper-slide {
+        height: auto;
+    }
+    @include media-breakpoint-up(lg) {
+        .swiper-button-next {
+            right: 20px;
+        }
+        .swiper-button-prev {
+            left: 20px;
+        }
+    }
+}

@@ -1,11 +1,17 @@
 .text-block {
     padding: 9rem 0;
-    font-size: 1.4rem;
-    .text {
-        max-width: 350px;
-        margin: auto;
-    }
+    font-size: 1.2rem;
+    
     h3 {
-        color: $primary
+        color: $primary;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    @include media-breakpoint-up(lg) {
+        .text {
+            max-width: 350px;
+            margin: auto;
+            text-align: left;
+        }
     }
 }

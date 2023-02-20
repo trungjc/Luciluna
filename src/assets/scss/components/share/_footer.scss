@@ -2,19 +2,25 @@
     padding: 5rem 0;
     background-color: #2E2B2B;
     color: rgb(96, 94, 94);
+    .navbar-nav {
+        justify-content: center;
+    }
+    @include media-breakpoint-up(lg) {
+        .navbar-nav {
+            justify-content: flex-end;
+            padding-right: 2.5rem;
+        }
+    }
     a {
         color: inherit;
         &:hover {
             color: #57BBBF
         }
     }
-    li.nav-item {
-        text-align: center;
-        flex: 1;
-    }
+    
     .nav-link {
-        
-        padding: 1rem ;
+        text-transform: uppercase;
+        padding: 1rem 2.5rem;
       
     }
     .navbar-brand  {

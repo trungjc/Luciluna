@@ -18,10 +18,15 @@ main{
         img{
             width: 163px;
         }
-        // margin-right: 10rem;
+       
         
     }
-    
+    @include media-breakpoint-up(lg) {
+        .language {
+            padding-left: 1rem;
+        }
+       
+    }
     .navbar-toggler{
        
         border: none;
@@ -61,6 +66,16 @@ main{
         top: 0;
         padding: 1.2rem 0;
         height: 6.7rem;
+    }
+    .language {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6rem;
+        ul{
+        
+            display: flex!important;
+        }
     }
     
     .navbar-close {

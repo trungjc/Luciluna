@@ -1,10 +1,14 @@
 .main-navbar {
-    .nav-item{
+    .navbar-nav {
         flex: 1;
-        text-align: center;
+        justify-content: flex-end;
+    }
+    .nav-item{
+        // flex: 1;
+        // text-align: center;
         
         .nav-link{
-            padding: 1.9rem 1rem;
+            padding: 1.9rem 2.5rem;
             color: #2f2b2b;
             text-transform: uppercase;
             &:hover{
@@ -41,7 +45,5 @@
             }
         }
         
-        
-
     }
 }

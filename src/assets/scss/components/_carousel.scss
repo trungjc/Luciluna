@@ -65,6 +65,9 @@
         width: 600px;
         margin: auto;
     }
+    h3 {
+        color: $primary
+    }
     .card-body {
         text-align: center;
         
@@ -78,8 +81,15 @@
             margin-bottom: 1rem;
         }
         > div {
-            max-width: 330px;
+            max-width: 500px;
             margin: auto;
+            h3 {
+
+            }
+            p {
+                max-width: 376px;
+                margin: auto;  
+            }
         }
         img {
             max-width: 87px;
@@ -100,20 +110,3 @@
     }
 }
 
-.persons {
-    text-align: center;
-    .name {
-        text-transform: uppercase;
-        font-weight: 700;
-       
-    }
-    
-    .ratio {
-        margin-bottom: 2rem;
-        img {
-            object-fit: cover;
-        }
-    }
-    font-size: 1.4rem;
-    font-family: 'Arial',$font-family-monospace;
-}
