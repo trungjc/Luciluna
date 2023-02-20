@@ -22,7 +22,7 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
     
     let swiperBox = new Swiper(".swiper-box", {
         speed: 600,
-        loop: false,
+        loop: true,
         slidesPerView: 1,
        
         autoplay: {
