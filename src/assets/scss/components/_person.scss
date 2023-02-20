@@ -14,4 +14,14 @@
         }
     }
     // font-family: 'Arial',$font-family-monospace;
+    @include media-breakpoint-up(lg) {
+        .swiper-button-next {
+            right: 10px;
+            color: black
+        }
+        .swiper-button-prev {
+            left: 10px;
+            color: black
+        }
+    }
 }
