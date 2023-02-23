@@ -68,9 +68,7 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
     let swiperContent = new Swiper(".slider-content", {
         speed: 600,
         loop: true,
-        autoplay: {
-            delay: 2500,
-        },
+       
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
