@@ -36,4 +36,17 @@
         
       
     }
+  
+    @include media-breakpoint-down(md) {
+        .image img {
+            height: 70px;
+        }
+        .des {
+            margin: 0 -2rem;
+        }
+        h5 {
+            padding: 0 2rem;
+        }
+    }
+    
 }

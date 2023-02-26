@@ -13,7 +13,19 @@
             object-fit: cover;
         }
     }
-    // font-family: 'Arial',$font-family-monospace;
+    .swiper-button-next ,.swiper-button-prev {
+        top :130px;
+    }
+    @include media-breakpoint-down(lg) {
+        .swiper-button-next ,.swiper-button-prev {
+            top :188px;
+        } 
+    }
+    @include media-breakpoint-down(md) {
+        .swiper-button-next ,.swiper-button-prev {
+            top : 83px;
+        } 
+    }
     @include media-breakpoint-up(lg) {
         .swiper-button-next {
             right: 10px;

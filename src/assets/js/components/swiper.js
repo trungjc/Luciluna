@@ -19,12 +19,32 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
             prevEl: '.swiper-button-prev',
         },
     });
-    
+    let row_swiper = new Swiper(".row-swiper", {
+        speed: 600,
+        loop: true,
+        slidesPerView: 2.2,
+        centeredSlides: true,   
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            "768": {
+             centeredSlides: false,   
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            "992": {
+              slidesPerView: 3,
+            },
+          },
+    });
     let swiperBox = new Swiper(".swiper-box", {
         speed: 600,
         loop: true,
         slidesPerView: 1,
-       
+        spaceBetween: 30,
         autoplay: {
             delay: 2500,
         },
@@ -45,7 +65,7 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
     let swiperPerson = new Swiper(".persons-swiper", {
         speed: 600,
         loop: true,
-        spaceBetween: 20,
+        spaceBetween: 30,
         slidesPerView: 2,
         autoplay: {
             delay: 2500,

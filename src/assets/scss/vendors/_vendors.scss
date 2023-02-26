@@ -1,0 +1,27 @@
+
+@include media-breakpoint-down(md) {
+
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+       
+    }
+    .section-tpl,.app-footer {
+        padding-top: 4rem!important;
+        padding-bottom: 4rem!important;
+        .navbar-brand  {
+            display: none!important;
+        }
+    }
+    .footer-navbar {
+        display: none!important;
+    }
+    .copy-right {
+        margin-top: 0!important;
+    }
+    .text-image {
+        h3 br {
+            display: none;
+        }
+    }
+}
