@@ -22,7 +22,7 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
     let row_swiper = new Swiper(".row-swiper", {
         speed: 600,
         loop: true,
-        slidesPerView: 2.2,
+        slidesPerView: 1.8,
         centeredSlides: true,   
         spaceBetween: 0,
         navigation: {

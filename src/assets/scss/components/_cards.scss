@@ -30,7 +30,11 @@
             object-fit: cover;
         }
     }
-   
+    @include media-breakpoint-down(md) {
+        .title {
+            font-size: 1.6rem;
+        }  
+    }
     // .arrow {
     //    div {
     //     transform: translateX(-50%) rotate(90deg);
@@ -61,6 +65,7 @@
     .swiper-button-prev,.swiper-button-next {
         top: 41%
     }
+   
     @include media-breakpoint-up(lg) {
         .swiper-button-next {
             right: 20px;
