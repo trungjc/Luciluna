@@ -36,8 +36,9 @@
         
       
     }
-  
+    
     @include media-breakpoint-down(md) {
+       
         .image img {
             height: 70px;
         }
@@ -52,4 +53,13 @@
         }
     }
     
+}
+
+.swiper-img-2,.swiper-img {
+    .swiper-button-prev,.swiper-button-next {
+        display: none;
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
+    }
 }
