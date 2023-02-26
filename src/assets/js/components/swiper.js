@@ -42,36 +42,24 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
         speed: 600,
         loop: true,
         spaceBetween: 30,
+        slidesPerView: 2,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        breakpoints: {
-            "768": {
-              slidesPerView: 2,
-            },
-            "992": {
-              slidesPerView: 3,
-            },
-          },
+       
     });
 
     let  swiper_img_2 = new Swiper(".swiper-img-2", {
         speed: 600,
         loop: true,
         spaceBetween: 30,
+        slidesPerView: 2,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        breakpoints: {
-            "768": {
-              slidesPerView: 2,
-            },
-            "992": {
-              slidesPerView: 2,
-            },
-          },
+       
     });
    
    
