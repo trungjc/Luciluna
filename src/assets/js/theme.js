@@ -2,9 +2,9 @@
 import 'bootstrap';
 
 // Components
-import './components/aos';
-import './components/swiper';
 
+import './components/swiper';
+import './components/aos';
 // theme misc
 // import './inView';
 import './misc';

@@ -9,9 +9,10 @@
     }
     @include media-breakpoint-up(lg) {
         .text {
-            max-width:400px;
+            max-width:420px;
             margin: auto;
             text-align: left;
+            font-size: 1.1rem;
         }
     }
 }

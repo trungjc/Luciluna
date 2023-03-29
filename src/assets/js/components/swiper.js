@@ -3,6 +3,13 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
 
 
 (function() {
+   
+    let swiperContent = new Swiper(".slider-contents", {
+        speed: 600,
+        loop: false,
+        slidesPerView: 1,
+        
+    });
     let swiper = new Swiper(".hero-slider", {
         direction: 'vertical',
         speed: 600,
@@ -19,11 +26,33 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
             prevEl: '.swiper-button-prev',
         },
     });
+    swiper.on('resize',function(swiper) {
+        var height = 0;
+        
+        if(document.body.clientWidth > 767) {
+            
+            $('.hero-slider img.d-none').each(function(item){
+                var h = $(this).height();
+                if(h > height) {
+                    height = h;
+                }
+            })
+        } else {
+            $('.hero-slider img.d-block').each(function(item){
+                var h = $(this).height();
+                if(h > height) {
+                    height = h;
+                }
+            })
+        }
+        
+        $('.hero-slider').css('height',height )
+    })
     let row_swiper = new Swiper(".row-swiper", {
         speed: 600,
         loop: true,
-        slidesPerView: 1.8,
-        centeredSlides: true,   
+        slidesPerView: 2.5,
+        // centeredSlides: true,   
         spaceBetween: 0,
        
         breakpoints: {
@@ -42,10 +71,18 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
         speed: 600,
         loop: true,
         spaceBetween: 30,
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+        "767": {
+            slidesPerView: 2,
+        },
+        "992": {
+            slidesPerView: 3,
+        },
         },
        
     });
@@ -54,7 +91,7 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
         speed: 600,
         loop: true,
         spaceBetween: 30,
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -66,7 +103,7 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
     let swiperBox = new Swiper(".swiper-box", {
         speed: 600,
         loop: true,
-        slidesPerView: 1,
+        slidesPerView: 1.5,
         spaceBetween: 30,
         autoplay: {
             delay: 2500,
@@ -89,7 +126,7 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
         speed: 600,
         loop: true,
         spaceBetween: 30,
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         autoplay: {
             delay: 2500,
         },
@@ -108,17 +145,5 @@ Swiper.use([Navigation, Pagination,Autoplay ]);
           },
     });
     
-    let swiperContent = new Swiper(".slider-content", {
-        speed: 600,
-        loop: true,
-       
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+    
 })();
